@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Fira_Code } from "next/font/google";
 import "./globals.css";
 import SocialLinks from "@/components/SocialLinks";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+const firaCode = Fira_Code({
+  variable: "--font-fira",
   subsets: ["latin"],
 });
 
@@ -26,10 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} antialiased`}
       >
         {children}
-        <SocialLinks />
+        <div className="hidden sm:block">
+          <SocialLinks />
+        </div>
       </body>
     </html>
   );

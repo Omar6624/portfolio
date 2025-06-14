@@ -1,10 +1,11 @@
+"use client";
 import Image from "next/image";
 
 const SocialLinks = () => {
   return (
     <>
       <div className="fixed left-6 bottom-0 hidden md:block">
-        <div className="flex flex-col items-center space-y-6 after:content-[''] after:block after:w-px after:h-24 after:bg-slate">
+        <div className="flex flex-col items-center space-y-6 after:content-[''] after:block after:w-px after:h-24 after:bg-white before:content-[''] before:block before:w-px before:h-screen before:bg-white">
           <a
             href="#"
             className="text-slate hover:text-teal hover:-translate-y-1 transition-all"
