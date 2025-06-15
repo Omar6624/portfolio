@@ -17,8 +17,25 @@
 body {
   background: linear-gradient(to top, #09192e, #041121);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-fira);
 }
 .heading-font {
   font-family: var(--font-fira);
+}
+
+/* Target the entire scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #9ca3af;
+  border-radius: 10px;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #2dd4bf;
+  border-radius: 2px;
 }
