@@ -43,3 +43,76 @@ export const colors = {
   Java: "bg-orange-500",
   React: "bg-blue-400",
 };
+
+export const buttons = ["Go", "PHP", "Java", "JavaScript"];
+
+export const goProject = [];
+export const phpProjoect = [
+  {
+    name: "SRIM",
+    github: "",
+    media: "",
+    technology: ["PHP", "Laravel", "Tailwind CSS"],
+    description: "",
+  },
+  {
+    name: "Alap News Portal",
+    github: "",
+    media: "",
+    technology: ["PHP", "Laravel", "Tailwind CSS"],
+    description: "",
+  },
+  {
+    name: "ADN Technology Website",
+    github: "",
+    media: "",
+    technology: ["PHP", "Laravel", "Tailwind CSS"],
+    description: "",
+  },
+  {
+    name: "ADNCS website",
+    github: "",
+    media: "",
+    technology: ["PHP", "Laravel"],
+    description: "",
+  },
+];
+export const javaProject = [
+  {
+    name: "BusBooking",
+    github: "",
+    media: "",
+    technology: ["Java", "Android Studio"],
+    description: "",
+  },
+];
+export const jsProject = [
+  {
+    name: "",
+    github: "",
+    media: "",
+    technology: ["JavaScript", "Nodejs"],
+    description: "",
+  },
+  {
+    name: "",
+    github: "",
+    media: "",
+    technology: ["JavaScript", "Nodejs"],
+    description: "",
+  },
+  {
+    name: "",
+    github: "",
+    media: "",
+    technology: ["JavaScript"],
+    description: "",
+  },
+  {
+    name: "",
+    github: "",
+    media: "",
+    technology: ["JavaScript"],
+    description: "",
+  },
+];

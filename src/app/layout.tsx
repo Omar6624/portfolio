@@ -33,9 +33,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} antialiased`}
       >
         {children}
-        <div className="hidden sm:block">
+        <section className="hidden sm:block">
           <SocialLinks />
-        </div>
+        </section>
       </body>
     </html>
   );

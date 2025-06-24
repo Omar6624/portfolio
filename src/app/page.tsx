@@ -1,10 +1,11 @@
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <div className="h-screen sm:flex sm:items-center">
+      <section className="h-screen sm:flex sm:items-center">
         {/* hero section */}
         <div className="container mx-auto sm:px-10">
           <div className="grid sm:grid-cols-4 grid-cols-1 max-w-7xl mx-auto gap-4">
@@ -44,10 +45,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div>
+      </section>
+      <section>
         <About />
-      </div>
+      </section>
+      <section>
+        <Projects />
+      </section>
     </>
   );
 }

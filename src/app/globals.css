@@ -39,3 +39,12 @@ body {
   background: #2dd4bf;
   border-radius: 2px;
 }
+
+/* Add to your Tailwind CSS file */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
