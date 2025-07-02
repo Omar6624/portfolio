@@ -13,7 +13,7 @@ export const career = [
     dateStart: "2024",
     dateEnd: "2024",
     duration: "3 Months",
-    skills: ["JavaScript", "React"],
+    skills: ["Javascript", "React"],
   },
   {
     title: "B.Sc in Computer Science and Engineering",
@@ -34,85 +34,119 @@ export const career = [
 ];
 
 export const colors = {
-  Laravel: "bg-rose-400",
-  PHP: "bg-sky-400",
-  JavaScript: "bg-amber-400",
-  Go: "bg-blue-400",
-  Nodejs: "bg-green-400",
-  MySql: "bg-orange-400",
-  Java: "bg-orange-500",
-  React: "bg-blue-400",
+  Laravel: "bg-red-500", // Laravel's official red
+  PHP: "bg-indigo-600", // PHP's official purple-ish indigo
+  JavaScript: "bg-yellow-400", // JS bright yellow
+  Go: "bg-cyan-500", // Go's light cyan-blue
+  Nodejs: "bg-green-600", // Node.js dark green
+  MySql: "bg-teal-500", // MySQL teal
+  Java: "bg-orange-600", // Java orange
+  React: "bg-sky-400", // React cyan-sky blue
 };
 
-export const buttons = ["Go", "PHP", "Java", "JavaScript"];
+export const techStack: { bgcolor: string; label: ProjectKeys }[] = [
+  { bgcolor: "#777BB4", label: "Php" },
+  { bgcolor: "#00ADD8", label: "Go" },
+  { bgcolor: "#007396", label: "Java" },
+  { bgcolor: "#dcc61c", label: "Javascript" },
+];
 
-export const goProject = [];
-export const phpProjoect = [
+const Go = [
   {
-    name: "SRIM",
-    github: "",
+    name: "",
+    link: "#",
     media: "",
-    technology: ["PHP", "Laravel", "Tailwind CSS"],
-    description: "",
+    technology: ["Go"],
+    description: [],
+    type: "",
+  },
+];
+const Php = [
+  {
+    name: "Service Repair and Inventory Management Application",
+    link: "#",
+    media: "",
+    technology: ["Php", "Laravel", "Tailwind CSS"],
+    description: [
+      "Redesigned the UI to improve usability and aesthetics.",
+      "Worked on the backend to optimize queries, improving page load time from 15s to 4.5s.",
+      "Refactored code into modular, well-commented functions to improve clarity and maintainability.",
+    ],
+    type: "Professional",
   },
   {
     name: "Alap News Portal",
-    github: "",
+    link: "#",
     media: "",
-    technology: ["PHP", "Laravel", "Tailwind CSS"],
-    description: "",
+    technology: ["Php", "Laravel", "Tailwind CSS"],
+    description: [
+      "Built a sleek, dynamic news portal with a modern design.",
+      "Updated the existing dashboard to integrate with the new portal with role-based authorization.",
+    ],
+    type: "Professional",
   },
   {
     name: "ADN Technology Website",
-    github: "",
+    link: "#",
     media: "",
-    technology: ["PHP", "Laravel", "Tailwind CSS"],
-    description: "",
+    technology: ["Php", "Laravel", "Tailwind CSS"],
+    description: [
+      "Revamped the static ADN Technology Website using Laravel and Tailwind CSS",
+    ],
+    type: "Professional",
   },
   {
-    name: "ADNCS website",
-    github: "",
-    media: "",
-    technology: ["PHP", "Laravel"],
-    description: "",
+    name: "ADNCS Website",
+    link: "#",
+    media: "#",
+    technology: ["Php", "Laravel"],
+    description: [
+      "Revamped the static ADNCS Website using Laravel and Tailwind CSS",
+    ],
+    type: "Professional",
   },
 ];
-export const javaProject = [
+const Java = [
   {
     name: "BusBooking",
-    github: "",
+    link: "#",
     media: "",
     technology: ["Java", "Android Studio"],
-    description: "",
+    description: [
+      "Designed the route selection  and seat selection pages for the BDTickets POS Application.",
+      "Implemented both screens in Android Studio with full functionality.",
+    ],
+    type: "Professional",
   },
 ];
-export const jsProject = [
+const Javascript = [
   {
-    name: "",
-    github: "",
-    media: "",
+    name: "Note Taking CLI",
+    link: "https://link.com/Omar6624/note-taking-cli",
+    media: "#",
     technology: ["JavaScript", "Nodejs"],
-    description: "",
+    description: [
+      "A simple and efficient JavaScript CLI app to create, read, update, and delete notes directly from the terminal.",
+    ],
+    type: "Exploratory Project",
   },
   {
-    name: "",
-    github: "",
-    media: "",
-    technology: ["JavaScript", "Nodejs"],
-    description: "",
-  },
-  {
-    name: "",
-    github: "",
+    name: "Music Player",
+    link: "https://link.com/Omar6624/MusicPlayer",
     media: "",
     technology: ["JavaScript"],
-    description: "",
-  },
-  {
-    name: "",
-    github: "",
-    media: "",
-    technology: ["JavaScript"],
-    description: "",
+    description: [
+      "A fully functional JavaScript music player with play, pause, track navigation, and volume controls for a seamless audio experience.",
+    ],
+    type: "Exploratory Project",
   },
 ];
+
+export const PROJECTS = {
+  Go: Go,
+  Php: Php,
+  Java: Java,
+  Javascript: Javascript,
+};
+
+export type ProjectKeys = "Go" | "Javascript" | "Java" | "Php";

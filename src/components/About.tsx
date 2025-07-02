@@ -30,8 +30,8 @@ export default function About() {
               Education
             </div>
             <div className="space-y-2 overflow-y-auto max-h-[400px] pr-2">
-              {career.map((item) => (
-                <div className="border border-gray-200 p-2 ">
+              {career.map((item, index) => (
+                <div key={index} className="border border-gray-200 p-2 ">
                   <p className="text-lg">{item.title}</p>
                   <p className="text-gray-300">{item.subtitle}</p>
                   <p className="text-gray-500 ">

@@ -1,14 +1,22 @@
-import { div } from "motion/react-client";
+"use client";
+import {} from "@/data/constant";
+import ProjectNavButtons from "./ProjectNavButtons";
+import { useState } from "react";
+import ProjectSection from "./ProjectSection";
+import { ProjectKeys } from "@/data/constant";
 
 export default function Projects() {
+  const [activeTab, setActiveTab] = useState<ProjectKeys>("Php");
   return (
-    <div className="container mx-auto sm:px-15 py-10 ">
+    <div className="h-screen container mx-auto sm:px-15 py-10 ">
       <div className="text-2xl pb-5 text-center">
-        {" "}
         <span className="text-teal-400 text-lg">03.</span> Projects
       </div>
-      <div className="h-[500px] border-1 border-gray-200">
-        <div></div>
+      <div className=" border-1 border-gray-200 my-2">
+        <ProjectNavButtons setActiveTab={setActiveTab} />
+      </div>
+      <div className=" border-1 border-gray-200 h-[90%] overflow-hidden">
+        <ProjectSection name={activeTab} />
       </div>
     </div>
   );
