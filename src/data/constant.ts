@@ -45,7 +45,7 @@ export const colors = {
 };
 
 export const techStack: { bgcolor: string; label: ProjectKeys }[] = [
-  { bgcolor: "#777BB4", label: "Php" },
+  { bgcolor: "#777BB4", label: "PHP" },
   { bgcolor: "#00ADD8", label: "Go" },
   { bgcolor: "#007396", label: "Java" },
   { bgcolor: "#dcc61c", label: "Javascript" },
@@ -61,15 +61,15 @@ const Go = [
     type: "",
   },
 ];
-const Php = [
+const PHP = [
   {
     name: "Service Repair and Inventory Management Application",
     link: "#",
     media: "",
-    technology: ["Php", "Laravel", "Tailwind CSS"],
+    technology: ["PHP", "Laravel", "Tailwind CSS"],
     description: [
       "Redesigned the UI to improve usability and aesthetics.",
-      "Worked on the backend to optimize queries, improving page load time from 15s to 4.5s.",
+      "Optimized backend queries, reducing page load time from 15s to 4.5s..",
       "Refactored code into modular, well-commented functions to improve clarity and maintainability.",
     ],
     type: "Professional",
@@ -78,7 +78,7 @@ const Php = [
     name: "Alap News Portal",
     link: "#",
     media: "",
-    technology: ["Php", "Laravel", "Tailwind CSS"],
+    technology: ["PHP", "Laravel", "Tailwind CSS"],
     description: [
       "Built a sleek, dynamic news portal with a modern design.",
       "Updated the existing dashboard to integrate with the new portal with role-based authorization.",
@@ -89,7 +89,7 @@ const Php = [
     name: "ADN Technology Website",
     link: "#",
     media: "",
-    technology: ["Php", "Laravel", "Tailwind CSS"],
+    technology: ["PHP", "Laravel", "Tailwind CSS"],
     description: [
       "Revamped the static ADN Technology Website using Laravel and Tailwind CSS",
     ],
@@ -99,7 +99,7 @@ const Php = [
     name: "ADNCS Website",
     link: "#",
     media: "#",
-    technology: ["Php", "Laravel"],
+    technology: ["PHP", "Laravel"],
     description: [
       "Revamped the static ADNCS Website using Laravel and Tailwind CSS",
     ],
@@ -113,8 +113,8 @@ const Java = [
     media: "",
     technology: ["Java", "Android Studio"],
     description: [
-      "Designed the route selection  and seat selection pages for the BDTickets POS Application.",
-      "Implemented both screens in Android Studio with full functionality.",
+      "Designed the route selection  and seat selection pages for a ticketing platform's POS Application.",
+      "Implemented dynamic seat layout configuration, seat booking, and route-based bus search functionalities.",
     ],
     type: "Professional",
   },
@@ -144,9 +144,9 @@ const Javascript = [
 
 export const PROJECTS = {
   Go: Go,
-  Php: Php,
+  PHP: PHP,
   Java: Java,
   Javascript: Javascript,
 };
 
-export type ProjectKeys = "Go" | "Javascript" | "Java" | "Php";
+export type ProjectKeys = "Go" | "Javascript" | "Java" | "PHP";
