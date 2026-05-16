@@ -25,11 +25,12 @@ const ProjectSection = ({ name }: ProjectSectionProps) => {
             <div className=" bg-opacity-20 border border-gray-200 border-opacity-30 w-[400px] h-[500px] overflow-hidden  shadow-lg backdrop-blur-md flex flex-col relative">
               <div className="flex-1 grid grid-rows-[2fr_0.5fr_3fr_0.5fr] h-full">
                 <div className="overflow-hidden">
-                  <img
+                  <img  
                     src="https://picsum.photos/800/600"
                     alt="Random"
                     className="w-full h-full object-cover"
                   />
+                  
                 </div>
 
                 <div className="px-2 flex items-center font-semibold text-teal-400 pb-2 text-lg">
