@@ -21,7 +21,7 @@ const ProjectSection = ({ name }: ProjectSectionProps) => {
         className="flex overflow-x-auto no-scrollbar"
       >
         {project.map((items, index) => (
-          <div className="p-4 space-x-5">
+          <div className="p-4 space-x-4">
             <div className=" bg-opacity-20 border border-gray-200 border-opacity-30 w-[400px] h-[500px] overflow-hidden  shadow-lg backdrop-blur-md flex flex-col relative">
               <div className="flex-1 grid grid-rows-[2fr_0.5fr_3fr_0.5fr] h-full">
                 <div className="overflow-hidden">
